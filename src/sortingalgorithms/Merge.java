@@ -6,10 +6,10 @@
 
 package sortingalgorithms;
 
-public class Merge implements SortingAlgorithms{
+public class Merge<T extends Comparable<T>> implements SortingAlgorithms<T>{
 
     @Override
-    public int[] sort(int[] array) {
+    public T[] sort(T[] array) {
         return null;
     }
     

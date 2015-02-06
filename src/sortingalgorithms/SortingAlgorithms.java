@@ -6,7 +6,7 @@
 
 package sortingalgorithms;
 
-public interface SortingAlgorithms {
+public interface SortingAlgorithms<T> {
     //TODO change to generics
-    int[] sort(int[] array);
+    T[] sort(T[] array);
 }

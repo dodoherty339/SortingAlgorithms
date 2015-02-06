@@ -15,25 +15,25 @@ import sortingalgorithms.*;
 
 public class Main {
     
-    private static int[] getRandomArray() {
+    private static Integer[] getRandomArray() {
         //TODO create method to generate random array of ints
-        return new int[]{1,5,8,3,9,2,4,10};
+        return new Integer[]{1,5,8,3,9,2,4,10};
     }
 
-    private static Map<String, SortingAlgorithms> populateMap() {
-        Map<String, SortingAlgorithms> algorithms = new HashMap<String, SortingAlgorithms>();
+    private static Map<String, SortingAlgorithms<Integer>> populateMap() {
+        Map<String, SortingAlgorithms<Integer>> algorithms = new HashMap<String, SortingAlgorithms<Integer>>();
         algorithms.put("Insertion", new Insertion());
         algorithms.put("Merge", new Merge());
         return algorithms;
     }
     
     public static void main(String[] args) {
-        Map<String, SortingAlgorithms> algorithms = populateMap();
+        Map<String, SortingAlgorithms<Integer>> algorithms = populateMap();
         Menu menu = new Menu(algorithms.keySet().toArray(new String[0]));
         Scanner in = new Scanner(System.in);
         int selection = 0;
-        int[] unsortedArray = getRandomArray();
-        int[] sorted = new int[unsortedArray.length];
+        Integer[] unsortedArray = getRandomArray();
+        Integer[] sorted = new Integer[unsortedArray.length];
         
         do {
             menu.printMenu();
@@ -44,6 +44,7 @@ public class Main {
                     sorted = algorithms.get("Insertion").sort(unsortedArray);
                     break;
                 case(2):
+                    sorted = algorithms.get("Merge").sort(unsortedArray);
                     break;
                 case(3):
                     break;

@@ -6,13 +6,13 @@
 
 package sortingalgorithms;
 
-public class Insertion implements SortingAlgorithms {
+public class Insertion<T extends Comparable<T>> implements SortingAlgorithms<T> {
 
     @Override
-    public int[] sort(int[] array) {
+    public T[] sort(T[] array) {
         for(int i = 1;i<array.length;i++) {
-            int a = array[i];
-            for(int j = i;((j > 0)&&(array[j-1] > a));j--){
+            T a = array[i];
+            for(int j = i;((j > 0)&&(array[j-1].compareTo(a)==1));j--){
                 array[j] = array[j-1];
                 array[j-1] = a;
             }
