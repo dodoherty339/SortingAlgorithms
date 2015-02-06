@@ -6,10 +6,6 @@
 
 package sortingalgorithms;
 
-/**
- *
- * @author Dan
- */
 public class Merge implements SortingAlgorithms{
 
     @Override

@@ -6,10 +6,6 @@
 
 package sortingalgorithms;
 
-/**
- *
- * @author Dan
- */
 public interface SortingAlgorithms {
     //TODO change to generics
     int[] sort(int[] array);

@@ -6,10 +6,6 @@
 
 package sortingalgorithms;
 
-/**
- *
- * @author Dan
- */
 public class Insertion implements SortingAlgorithms {
 
     @Override

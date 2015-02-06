@@ -13,10 +13,6 @@ import java.util.Scanner;
 import menu.Menu;
 import sortingalgorithms.*;
 
-/**
- *
- * @author Dan
- */
 public class Main {
     
     private static int[] getRandomArray() {
