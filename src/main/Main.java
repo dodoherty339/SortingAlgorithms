@@ -17,7 +17,7 @@ public class Main {
     
     private static Integer[] getRandomArray() {
         //TODO create method to generate random array of ints
-        return new Integer[]{1,5,8,3,9,2,4,10};
+        return new Integer[]{1,5,8,3,9,2,4,10,7,15,20,11,36,22,40,16,19,30,21};
     }
 
     private static Map<String, SortingAlgorithms<Integer>> populateMap() {
