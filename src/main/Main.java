@@ -24,6 +24,7 @@ public class Main {
         Map<String, SortingAlgorithms<Integer>> algorithms = new HashMap<String, SortingAlgorithms<Integer>>();
         algorithms.put("Insertion", new Insertion());
         algorithms.put("Merge", new Merge());
+        algorithms.put("Shellsort", new Merge());
         return algorithms;
     }
     
@@ -47,6 +48,7 @@ public class Main {
                     sorted = algorithms.get("Merge").sort(unsortedArray);
                     break;
                 case(3):
+                    sorted = algorithms.get("Shellsort").sort(unsortedArray);
                     break;
                 default:
                     break;
